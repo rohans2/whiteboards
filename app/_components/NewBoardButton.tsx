@@ -23,7 +23,7 @@ export const NewBoardButton = ({
     })
       .then((id) => {
         toast.success("Board Created");
-        router.push(`/boards/${id}`);
+        router.push(`/board/${id}`);
       })
       .catch(() => toast.error("Failed to create board"));
   };
